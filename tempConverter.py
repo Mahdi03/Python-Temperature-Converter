@@ -1,7 +1,7 @@
 # Main Function
 def tempConvert():
     # Get Input Temperature String
-    inputTempStr = raw_input("Enter your temperature: ")
+    inputTempStr = input("Enter your temperature: ")
     # Split The String Into A List By Word
     inputTempLs = inputTempStr.split(" ")
     if inputTempLs[0] == "exit":
