@@ -37,11 +37,10 @@ def tempConvert():
                 outputTemp = str(int(float(((inputTemp - 273.15) * 9 / 5) + 32))) + "°F"
             elif toScale == "--toC":
                 outputTemp = str(int(float(inputTemp - 273.15))) + "°C"
-    
     print(outputTemp)
 
 # Intro
-print("Hi! Welcome to Temperature Converter!!!\nTo get started, there will be some basic things that you will need to know.")
+print("Hi! Welcome to Temperature Converter!!!\nTo get started, there will be some basic things that you will need to know.\n\n")
 # Step 1
 print("1. Enter your numbers plain.\nExample: 84\n")
 # Step 2
