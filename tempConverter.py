@@ -26,7 +26,7 @@ def tempConvert():
             if toScale == "--toC":
                 outputTemp = str(inputTemp) + "°C"
             elif toScale == "--toF":
-                outputTemp = str(int(float((inputTemp + 32) * 9 / 5))) + "°F"
+                outputTemp = str(int(float((inputTemp * 9 / 5)) + 32)) + "°F"
             elif toScale == "--toK":
                 outputTemp = str(int(float(inputTemp + 273.15))) + " K"
         # If The Starting Scale Is  Kelvin...
@@ -37,7 +37,7 @@ def tempConvert():
                 outputTemp = str(int(float(((inputTemp - 273.15) * 9 / 5) + 32))) + "°F"
             elif toScale == "--toC":
                 outputTemp = str(int(float(inputTemp - 273.15))) + "°C"
-    print(outputTemp)
+    return outputTemp
 
 # Intro
 print("Hi! Welcome to Temperature Converter!!!\nTo get started, there will be some basic things that you will need to know.\n\n")
@@ -59,4 +59,4 @@ print("Example: 84 --F --toK\n")
 print("4. Press Enter and let the magic begin!!! Have Fun!!\n")
 print("5. Type 'exit' to exit")
 while(True):
-    tempConvert()
+    print(tempConvert())
